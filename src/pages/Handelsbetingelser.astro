@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const Title = "Handelsbetingelser";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <style>
@@ -11,6 +12,7 @@ const Title = "Handelsbetingelser";
 </style>
 
 <BaseLayout Title={Title}>
+  <Navigation />
   <div>
     <h1>Handelsbetingelser</h1>
     <p>Jeg er på Handelsbetingelser siden</p>
