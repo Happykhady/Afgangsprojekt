@@ -2,11 +2,13 @@
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 const Title = "Holistisk Massage- & Zoneterapi";
+import Navigation from "../components/Navigation.astro";
 ---
 
 <style></style>
 
 <BaseLayout Title={Title}>
+  <Navigation />
   <div>
     <h1>Massage, Krops- & Zoneterapi er for alle</h1>
     <p>
@@ -22,13 +24,4 @@ const Title = "Holistisk Massage- & Zoneterapi";
       afspændt og mærker balance og ro.
     </p>
   </div>
-
-  <a href="/Index"> Holistisk Massage- & Zoneterapi</a>
-  <a href="/Behandlinger"> Behandlinger</a>
-  <a href="/Behandlingsteknikker"> Behandlingsteknikker</a>
-  <a href="/Blog"> Blog</a>
-  <a href="/Blogpost"> Blogpost</a>
-  <a href="/Om">Om</a>
-  <a href="/CookiesPrivatlivpolitik"> Cookies & Privatlivpolitik</a>
-  <a href="/Handelsbetingelser"> Handelsbetingelser</a>
 </BaseLayout>
