@@ -45,4 +45,5 @@ h2,
 h3,
 p {
   color: var(--font-blue);
+  font-family: var(--font-sans);
 }
