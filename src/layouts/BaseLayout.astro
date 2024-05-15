@@ -1,13 +1,17 @@
 ---
 import BaseHead from "../components/BaseHead.astro";
 const { Title } = Astro.props;
+import Navigation from "../components/Navigation.astro";
+import Footer from "../components/Footer.astro";
 ---
 
 <html lang="en">
   <head>
     <BaseHead Title={Title} />
   </head>
+  <Navigation />
   <body>
     <slot />
+    <Footer />
   </body>
 </html>
