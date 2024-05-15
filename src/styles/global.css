@@ -1,1 +1,48 @@
 @import "./reset.css";
+
+:root {
+  /*Farver*/
+  --primary-background: #dae4e6;
+  --secondary-background: #f2efeb;
+
+  --tertiary-background: #8094a6;
+
+  --primary-blue: #071b33;
+
+  --font-blue: #071b33;
+
+  /*Font-weight*/
+  --light: 300;
+  --regular: 400;
+  --medium: 500;
+  --bold: 600;
+  --verybold: 700;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+body {
+  max-width: 2000px;
+  min-height: 100vh;
+  margin: auto;
+  background-color: var(--primary-background);
+  color: var(--font-blue);
+}
+
+h1,
+h2,
+h3,
+p {
+  color: var(--font-blue);
+}
