@@ -33,17 +33,14 @@
     </div>
 
     <div class="Icons">
-      <div class="frfm">
-        <img src="/public/Iconer/FRFM.png" alt="FRFM Logo" />
-      </div>
+      <img class="frfm" src="/Iconer/FRFM.png" alt="FRFM Logo" />
+      <img class="rab" src="/Iconer/RAB.png" alt="FRFM Logo" />
+      <img class="zct" src="/Iconer/ZCT.png" alt="FRFM Logo" />
+    </div>
 
-      <div class="rab">
-        <img src="/public/Iconer/RAB.png" alt="FRFM Logo" />
-      </div>
-
-      <div class="zct">
-        <img src="/public/Iconer/ZCT.png" alt="FRFM Logo" />
-      </div>
+    <div class="skrift">
+      <p>© Holistisk massage- og zoneterapi v/ Ulla Vollmer Lund</p>
+      <p>CVR: 37243922</p>
     </div>
   </div>
 </footer>
@@ -52,12 +49,12 @@
   footer {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    background-color: var(--footer-brown);
+    background-color: var(--tertiary-background);
   }
 
   .container_footer {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(6, 1fr);
 
     display: flex;
     flex-direction: row;
@@ -70,9 +67,34 @@
     text-decoration: none;
   }
 
+  .Icons {
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+
+    display: inline-flex;
+    gap: 1rem;
+    margin-top: 3.5rem;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .frfm {
+    width: 70px;
+    height: 40px;
+  }
+
+  .rab {
+    width: 120px;
+    height: 40px;
+  }
+
+  .zct {
+    width: 65px;
+    height: 40px;
+  }
+
   @media (min-width: 900px) {
-    footer {
-      padding: 3rem;
-    }
   }
 </style>
