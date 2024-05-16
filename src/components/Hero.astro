@@ -6,7 +6,7 @@ import Navigation from "./Navigation.astro";
   <Navigation />
   <div class="hero-text">
     <p>GIV DIG SELV EN LEDIG STUND. TRÆK VEJRET. MÆRK ROEN.</p>
-    <button>BOOK TID</button>
+    <button class="book">BOOK TID</button>
   </div>
 </div>
 
@@ -33,6 +33,13 @@ import Navigation from "./Navigation.astro";
       position: absolute;
       bottom: 8px;
       left: 16px;
+    }
+
+    .book {
+      border: 2px solid white;
+      background-color: transparent;
+      color: white;
+      padding: 12px 60px;
     }
   }
 </style>
