@@ -1,6 +1,7 @@
 ---
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Navigation from "../components/Navigation.astro";
 const Title = "Blogpost";
 ---
 
@@ -17,6 +18,7 @@ const Title = "Blogpost";
 </style>
 
 <BaseLayout Title={Title}>
+  <Navigation />
   <div>
     <h1>Kom din høfeber i forkøbet med zoneterapi</h1>
     <p>Jeg er inde på blogindlægget</p>

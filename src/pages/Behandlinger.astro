@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
+import Massageterapi from "../components/Massageterapi.astro";
+import Navigation from "../components/Navigation.astro";
 const Title = "Behandlinger";
 ---
 
@@ -13,11 +15,6 @@ const Title = "Behandlinger";
 </style>
 
 <BaseLayout Title={Title}>
-  <div>
-    <h1>Behandlinger</h1>
-    <p>Jeg er på behandlingssiden</p>
-  </div>
-  <button
-    ><a href="/Behandlingsteknikker"> Læs om behandlingsteknikkerne</a></button
-  >
+  <Navigation />
+  <Massageterapi />
 </BaseLayout>

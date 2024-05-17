@@ -1,9 +1,17 @@
----
-import Navigation from "./Navigation.astro";
----
-
 <div class="hero-image">
-  <Navigation />
+  <div class="Container">
+    <div class="Home">
+      <a href="/Index"> <h1>Holistisk Massage- & Zoneterapi</h1></a>
+    </div>
+
+    <div class="Navi">
+      <a href="https://holistiskmassage.onlinebooq.dk"> Book tid</a>
+      <a href="/Behandlinger"> Behandlinger</a>
+      <a href="/Produkter"> Produkter</a>
+      <a href="/Blog"> Blog</a>
+      <a href="/Om">Om</a>
+    </div>
+  </div>
   <div class="hero-text">
     <p>GIV DIG SELV EN LEDIG STUND. TRÆK VEJRET. MÆRK ROEN.</p>
     <button class="book">BOOK TID</button>
@@ -40,6 +48,46 @@ import Navigation from "./Navigation.astro";
       background-color: transparent;
       color: white;
       padding: 12px 60px;
+    }
+
+    .Container {
+      background-color: none;
+      display: flex;
+
+      list-style-type: none;
+
+      padding: 1rem 0 1rem 1rem;
+    }
+
+    .divider {
+      border-bottom: 1px solid white;
+
+      margin-bottom: 10ch;
+    }
+
+    .Home {
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      font-style: normal;
+      position: absolute;
+      top: 8px;
+      left: 16px;
+    }
+
+    .Navi {
+      font-family: "Martel", serif;
+      font-weight: 400;
+      font-style: normal;
+      position: absolute;
+      top: 8px;
+      right: 16px;
+      background-color: none;
+      padding: 1rem 0 1rem 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: var(--font-blue);
     }
   }
 </style>
