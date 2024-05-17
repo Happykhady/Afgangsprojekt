@@ -1,3 +1,26 @@
-<img src="/public/Fotos/entre.png" alt="billede af en entre" />
+<section class="container">
+  <img src="/public/Fotos/entre.png" alt="billede af en entre" />
+
+  <p>Placeholder tekst</p>
+</section>
 
 <img src="/public/Fotos/lyskropstor.png" alt="billede af en anatomisk krop" />
+
+<style>
+  .container {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 5px;
+  }
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  p {
+    font-family: "Martel", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+</style>
