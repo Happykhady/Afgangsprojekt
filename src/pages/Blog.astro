@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import BaseLayout from "../layouts/BaseLayout.astro";
 import Navigation from "../components/Navigation.astro";
+import BlogFrame from "../components/BlogFrame.astro";
 const Title = "Blog";
 ---
 
@@ -19,9 +20,5 @@ const Title = "Blog";
 
 <BaseLayout Title={Title}>
   <Navigation />
-  <div>
-    <h1>Blog</h1>
-    <p>Jeg er på bloggen</p>
-  </div>
-  <a href="/Blogpost"> Blogpost</a>
+  <BlogFrame />
 </BaseLayout>
